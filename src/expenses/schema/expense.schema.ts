@@ -10,7 +10,7 @@ export class Expense extends Document {
   @Prop({ required: true })
   amount: number;
 
-  @Prop({ required: true, type: Types.ObjectId, ref: User.name })
+  @Prop({ required: true, type: Types.ObjectId, ref: 'User' })
   user: User;
 }
 
